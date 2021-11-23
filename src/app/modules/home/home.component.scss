@@ -1,0 +1,27 @@
+.container-advisers {
+  padding: 10px;
+}
+.container__button-add {
+  padding-left: 15px;
+}
+.adviser {
+  background-color: rgb(21, 121, 251);
+  color: white;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: flex;
+  cursor: pointer;
+}
+.adviser-name {
+  padding: 15px 20px;
+  width: 100%;
+}
+.adviser-delete {
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adviser-delete:hover {
+  color: rgb(221, 0, 0);
+}

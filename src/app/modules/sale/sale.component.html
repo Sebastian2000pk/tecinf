@@ -1,0 +1,14 @@
+<div class="sales">
+  <div class="name">
+    {{data.name}}
+  </div>
+  <div class="input">
+    <input type="number" class="form-control" [(ngModel)]="sale">
+  </div>
+  <div class="input">
+    <input type="date" class="form-control" disabled>
+  </div>
+  <div class="container-buttons">
+    <button type="button" class="btn btn-outline-success" (click)="save()">Guardar</button>
+  </div>
+</div>

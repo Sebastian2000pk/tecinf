@@ -1,0 +1,19 @@
+<h2>Asesores comerciales</h2>
+
+<div class="container__button-add">
+  <button class="btn btn-outline-primary" (click)="newAdviser()">
+    Agregar 
+    <i class="fas fa-plus"></i>
+  </button>
+</div>
+
+<div class="container-advisers">
+  <div class="adviser" *ngFor="let adviser of listAdvisers" class="adviser">
+    <div class="adviser-name" (click)="select(adviser)" >
+      {{ adviser.name }}
+    </div>
+    <div class="adviser-delete" (click)="delete(adviser.id)">
+      <i class="fas fa-trash-alt"></i>
+    </div>
+  </div>
+</div>

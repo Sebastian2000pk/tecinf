@@ -1,0 +1,4 @@
+<div class="sales-container">
+  <app-sale *ngFor="let sale of listAdvisers" [data]="sale" [sale]="findSale(sale.id)" [idSale]="findIdSale(sale.id)">
+  </app-sale>
+</div>

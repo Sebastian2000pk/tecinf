@@ -1,0 +1,35 @@
+.container-commissions {
+  display: flex;
+}
+.type {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.name {
+  font-size: 20px;
+}
+.add-commission {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgb(0, 153, 255);
+  box-shadow: 0px 0px 5px 1px #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}

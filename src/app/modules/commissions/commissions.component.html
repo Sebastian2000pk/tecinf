@@ -1,0 +1,13 @@
+<div class="container-commissions">
+  <div class="add-commission" (click)="openDialog({})">
+    Agregar comissión
+  </div>
+  <div class="type" *ngFor="let commission of listCommissions" (click)="openDialog(commission)">
+    <div class="name">
+      {{ commission.name }}
+    </div>
+    <div class="goal">
+      {{commission.goal}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>{{ title }} asesor</h2>
+<div mat-dialog-content>
+  <form [formGroup]="dataGroup">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" class="form-control input-popup" formControlName="name" />
+    </div>
+
+    <div class="form-group">
+      <label>Correo</label>
+      <input type="text" class="form-control input-popup" formControlName="email">
+    </div>
+
+    <div class="form-group">
+      <label>Telefono</label>
+      <input type="number" class="form-control input-popup" formControlName="phone">
+    </div>
+
+    <div class="form-group">
+      <label>Tipo asesor</label>
+      <select class="form-control input-popup" formControlName="type">
+        <option [value]="type.id" *ngFor="let type of listTypes">{{ type.name}}</option>
+      </select>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancelar</button>
+  <button mat-button [mat-dialog-close]="dataGroup.controls" [disabled]="dataGroup.invalid">Guardar</button>
+</div>
